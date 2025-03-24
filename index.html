@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
+<style>
+    *  {
+        margin: 10px;
+    }
+
+    .ButtonContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    button {
+        /* margin: 1em; */
+    }
+</style>
 <body>
-    
+    <div class="ButtonContainer">
+        <button id="btnRock">Rock</button>
+        <button id="btnPaper">Paper</button>
+        <button id="btnScissors">Scissors</button>
+        <button id="resetGame">Reset Game</button>
+    </div>
+    <div class="RunningScore">
+        <h2 id="ScoreHeader">Score</h2>
+        <p id="ComputerScore">Computer: </p>
+        <p id="HumanScore">Human: </p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
